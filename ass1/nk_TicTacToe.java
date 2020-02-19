@@ -55,7 +55,7 @@ public class nk_TicTacToe {
 	public void storePlay(int row, int col, char symbol) {
 		gameBoard[row][col]=symbol;
 	}
-	/*Returns true if gameBoard[row][col] is ¡¯ ¡¯; otherwise it returns false*/
+	/*Returns true if gameBoard[row][col] is Â¡Â¯ Â¡Â¯; otherwise it returns false*/
 	public boolean squareIsEmpty (int row, int col) {
 		if(gameBoard[row][col]==' ') {
 			return true;
@@ -144,12 +144,12 @@ public class nk_TicTacToe {
 		}
 	}
 	/*
-	 * ¨C 3, if the computer has won, i.e. there are k adjacent ¡¯O¡¯s in the same row, column, 
+	 * Â¨C 3, if the computer has won, i.e. there are k adjacent Â¡Â¯OÂ¡Â¯s in the same row, column, 
 	 * or diagonal of gameBoard;
-	 * ¨C 0, if the human player has won.
-	 * ¨C 2, if the game is a draw, i.e. 
+	 * Â¨C 0, if the human player has won.
+	 * Â¨C 2, if the game is a draw, i.e. 
 	 * there are no empty positions in gameBoard and no player has won.
-	 * ¨C 1, if the game is still undecided, i.e. there are still 
+	 * Â¨C 1, if the game is still undecided, i.e. there are still 
 	 * empty positions in gameBoard and no
 player has won.*/
 	public int evalBoard() {
